@@ -8,10 +8,10 @@ function About(){
             </div>
             <div className="img">
                 <div className='img2'>
-                    <img src={process.env.PUBLIC_URL+'Images/Mario and Adrian b_2.jpg'} alt=''></img>
+                    <img src={process.env.PUBLIC_URL+'images/Mario and Adrian b_2.jpg'} alt=''></img>
                 </div>
                 <div className='img1'>
-                    <img src={process.env.PUBLIC_URL+'/Images/restaurant chef B.jpg'} alt=""></img>
+                    <img src={process.env.PUBLIC_URL+'/images/restaurant chef B.jpg'} alt=""></img>
                 </div>
             </div>
         </section>
