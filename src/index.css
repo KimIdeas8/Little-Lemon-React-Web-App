@@ -611,12 +611,28 @@ input,select{
   font-weight: 800 !important;
 }
 
+@media(max-width:1000px){
+  .bookingForm-input{
+    width: 50vw;
+  }
+  .bookingForm-button{
+    width: 50vw;
+  }
+}
+
 @media (max-width:800px){
   .bookingForm{
     grid-column: 2/span 10;
 
     display:flex;
     flex-flow:column wrap;
+  }
+
+  .bookingForm-input{
+    width: 85vw;
+  }
+  .bookingForm-button{
+    width: 85vw;
   }
 }
 .ConfirmedBookingPage{
