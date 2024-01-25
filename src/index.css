@@ -580,11 +580,11 @@ nav ul li button a:hover{
   gap:20px;
 }
 .bookingForm-input{
-  max-width: 40vw;
+  width: 100%;
 }
 .bookingForm-button{
   justify-content: center;
-  max-width: 40vw;
+  width: 100%;
   background-color: #495e57;
   color:white;
   border-radius: 50px;
@@ -611,27 +611,12 @@ input,select{
   font-weight: 800 !important;
 }
 
-@media(max-width:1000px){
-  .bookingForm-input{
-    max-width: 50vw;
-  }
-  .bookingForm-button{
-    max-width: 50vw;
-  }
-}
-
 @media (max-width:800px){
   .bookingForm{
     grid-column: 2/span 10;
 
     display:flex;
     flex-flow:column wrap;
-  }
-  .bookingForm-input{
-    max-width: 85vw;
-  }
-  .bookingForm-button{
-    max-width: 85vw;
   }
 }
 .ConfirmedBookingPage{
