@@ -238,49 +238,21 @@ nav ul li button a:hover{
 .highlights>.title{
   grid-area: highlights-title;
 
-  display: grid;
-  grid-template-columns: repeat(24,1fr);
-  align-items: center;
-}
-.highlights>.title>h3{
-  grid-column: 5/span 12;
-}
-.highlights>.title>.button{
-  grid-column: 18/span 4;
-
   display: flex;
-  justify-content: flex-end;
+  padding:10px;
+  justify-content: space-between;
+
+  align-items: center;
+  text-align: center;
 }
 
-@media(max-width:935px) {
-  .highlights>.title>h3{
-    grid-column: 3/span 12;
-  }
-  .highlights>.title>.button{
-    grid-column: 17/span 6;
-  }
-}
-
-@media(max-width:440px) {
-  .highlights>.title>.button{
-    grid-column: 16/span 8;
-  }
-}
 .highlights>.body{
   grid-area: highlights-body;
+  padding: 10px;
 
   display: grid;
-  grid-template-columns: repeat(24,1fr);
-}
-
-.highlights>.body>.one{
-  grid-column: 5/span 5;
-}
-.highlights>.body>.two{
-  grid-column: 11/span 5;
-}
-.highlights>.body>.three{
-  grid-column: 17/span 5;
+  grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+  grid-column-gap: 20px;
 }
 
 .highlights>.body>.cards{
@@ -294,27 +266,7 @@ nav ul li button a:hover{
   margin: 25px 0;
   background-color: #edefee;
 }
-@media(max-width:935px){
-  .highlights>.body>.one{
-    grid-column: 3/span 8;
-  }
-  .highlights>.body>.two{
-    grid-column: 15/span 8;
-  }
-  .highlights>.body>.three{
-    grid-column: 3/span 8;
-  }
-}
-@media(max-width:620px){
-  .highlights>.body>.cards{
-    grid-column: 7/span 10;
-  }
-}
-@media(max-width:450px){
-  .highlights>.body>.cards{
-    grid-column: 4/span 18;
-  }
-}
+
 .highlights>.body>.cards>.card-img{
   grid-area: card-img;
   overflow: hidden;
@@ -371,7 +323,10 @@ nav ul li button a:hover{
   grid-area:testimonials-body;
 
   display: grid;
-  grid-template-columns: repeat(48,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-column-gap: 20px;
+
+  padding: 10px;
 }
 .testimonials>.body>.cards{
   display: flex;
@@ -383,45 +338,6 @@ nav ul li button a:hover{
   margin: 25px 0;
   padding: 25px 0;
   border-radius: 4px;
-}
-.testimonials>.body>.one{
-  grid-column: 2/span 10;
-}
-.testimonials>.body>.two{
-  grid-column: 14/span 10;
-}
-.testimonials>.body>.three{
-  grid-column: 26/span 10;
-}
-.testimonials>.body>.four{
-  grid-column: 38/span 10;
-}
-
-@media(max-width:935px){
-  .testimonials>.body>.one{
-    grid-column: 6/span 16;
-  }
-  .testimonials>.body>.two{
-    grid-column: 28/span 16;
-  }
-  .testimonials>.body>.three{
-    grid-column: 6/span 16;
-  }
-  .testimonials>.body>.four{
-    grid-column: 28/span 16;
-  }
-}
-
-@media(max-width:630px){
-  .testimonials>.body>.cards{
-    grid-column: 13/span 24;
-  }
-}
-
-@media(max-width:440px){
-  .testimonials>.body>.cards{
-    grid-column: 9/span 32;
-  }
 }
 
 .testimonials>.body>.cards>.rating{
